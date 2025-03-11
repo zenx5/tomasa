@@ -1,0 +1,36 @@
+---
+    const { size, time } = Astro.props
+---
+<style define:vars={{ size, time }} scoped>
+    .triangle{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border-top-left-radius: var(--size) calc(var(--size)/2);
+        border-top-right-radius: calc(var(--size)/4) calc(var(--size)/4);
+        border-bottom-right-radius: calc(var(--size)/2) var(--size);
+        border-bottom-left-radius: var(--size);
+        width: calc(var(--size)*(100-12.5)/100);
+        height: calc(var(--size)*(100-12.5)/100);
+        animation: triangle-changing var(--time) infinite;
+    }
+
+    @keyframes triangle-changing {
+    0%, 100% {
+        border-top-left-radius: var(--size) calc(var(--size)/2);
+        border-top-right-radius: calc(var(--size)/4) calc(var(--size)/4);
+        border-bottom-right-radius: calc(var(--size)/2) var(--size);
+        border-bottom-left-radius: var(--size);
+    }
+    50% {
+        border-top-left-radius: calc(var(--size)/2) var(--size);
+        border-top-right-radius: var(--size);
+        border-bottom-right-radius: var(--size) calc(var(--size)/2);
+        border-bottom-left-radius: calc(var(--size)/4) calc(var(--size)/4);
+    }
+    }
+</style>
+<div class="triangle">
+    <slot />
+</div>
