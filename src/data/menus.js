@@ -6,27 +6,27 @@ export const menuMain = [
     },
     {
         name: "Menu",
-        url: "/menu",
+        url: "#",
         highlighted: false,
     },
     {
-        name: "About Us",
-        url: "/about-us",
+        name: "Nosotros",
+        url: "#",
         highlighted: false,
     },
     {
-        name: "Gallery",
-        url: "/gallery",
+        name: "Galeria",
+        url: "#",
         highlighted: false,
     },
     {
-        name: "Contact",
-        url: "/contact",
+        name: "Contacto",
+        url: "#",
         highlighted: false,
     },
     {
-        name: "Book",
-        url: "/book",
+        name: "Agenda",
+        url: "#",
         highlighted: true,
     },
 ];
@@ -44,7 +44,7 @@ export const footerSecondary = [
     {
         title: "support",
         items: [
-            { name: "pricing", url: "/pricing" },
+            { name: "pricing", url: "#" },
         ],
     },
 ];
@@ -53,8 +53,8 @@ export const footerTertiary = [
     {
         title: "Links",
         items: [
-            { name: "privacybeleid", url: '/privacy-policy' },
-            { name: "api status", url: "/api-status" },
+            { name: "privacybeleid", url: '#' },
+            { name: "api status", url: "#" },
         ],
     },
 ];
