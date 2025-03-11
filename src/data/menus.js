@@ -16,8 +16,8 @@ export const menuMain = [
     },
     {
         name: "Galeria",
-        url: "#",
-        highlighted: false,
+        url: "/gallery",
+        highlighted: true,
     },
     {
         name: "Contacto",
