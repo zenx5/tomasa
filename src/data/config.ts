@@ -7,8 +7,8 @@ export const siteSlogan = "The best pies in the galaxy!";
 export const themeColor = "#FF0000";
 
 export const phone = {
-	href: "tel:+123456789",
-	label: "(123) 456-789",
+	href: "tel:+584148576215",
+	label: "(0414) 857 6215",
 };
 
 export const email = {
