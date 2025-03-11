@@ -8,8 +8,8 @@ export default {
 			},
 			colors: {
 				brand: {
-					green: "#157F71",
-					red: "#DB1D00",
+					green: "rgb(0,114,190)",
+					red: "rgb(255,24,33)",
 				},
 			},
 			container: {

@@ -12,15 +12,13 @@ import WideImage from "~/components/WideImage.astro";
 import ReviewSlider from "~/components/ReviewSlider.astro";
 
 // Images
-import PizzaHero from "~/assets/images/pizza-hero.png";
-import Pizza from "~/assets/images/pizza.png";
-import Spaghetti from "~/assets/images/spaghetti.png";
-import Fish from "~/assets/images/fish.png";
-import DecorativeImage from "~/assets/images/pexels-shvetsa-5953523.jpg";
 import reviewAuthors from "~/assets/images/review-authors.png";
-import Dessert from "~/assets/images/dessert.png";
-import Mussels from "~/assets/images/mussels2.png";
-import TriangleImage from "~/components/TriangleImage.astro";
+import CachapaConQueso from "~/assets/images/plato-1.JPG";
+import Sopa from "~/assets/images/plato-2.JPG";
+import Pollo from "~/assets/images/plato-3.JPG";
+import Postre from "~/assets/images/postre.JPG";
+import Banner from "~/assets/images/banner-1.png";
+
 ---
 
 <Layout title="Home" pageTitle="Home" description="Welcome to our restaurant!">
@@ -42,23 +40,21 @@ import TriangleImage from "~/components/TriangleImage.astro";
 				</div>
 			</div>
 			<div slot="hero-content-right">
-				<TriangleImage size="600px" time="10s">
-					<Picture
-						class:list={"mx-auto"}
-						src={PizzaHero}
-						width={600}
-						height={600}
-						formats={["avif", "webp"]}
-						alt="A description of my image."
-						loading={"eager"}
-						fetchpriority={"high"}
-					/>
-				</TriangleImage>
+				<Picture
+					class:list={"mx-auto"}
+					src={CachapaConQueso}
+					width={600}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+					loading={"eager"}
+					fetchpriority={"high"}
+				/>
 			</div>
 		</Hero>
 	</Section>
 
-	<WideImage image={DecorativeImage} alt="Just an image" class:list={"aspect-video lg:aspect-[16/6]"} />
+	<WideImage image={Banner} alt="Just an image" class:list={"aspect-video lg:aspect-[16/6]"} />
 
 	<Section class:list={"bg-white"}>
 		<Heading>
@@ -72,8 +68,8 @@ import TriangleImage from "~/components/TriangleImage.astro";
 			<div slot="grid-content-1">
 				<div class="flex flex-col items-center prose text-center">
 					<Picture
-						class:list={"not-prose w-full h-auto"}
-						src={Pizza}
+						class:list={"not-prose w-full h-auto rounded-l-full rounded-b-full"}
+						src={CachapaConQueso}
 						formats={["avif", "webp"]}
 						alt="A description of my image."
 					/>
@@ -88,8 +84,8 @@ import TriangleImage from "~/components/TriangleImage.astro";
 			<div slot="grid-content-2">
 				<div class="flex flex-col items-center prose text-center">
 					<Picture
-						class:list={"not-prose w-full h-auto"}
-						src={Spaghetti}
+						class:list={"not-prose w-full h-auto rounded-l-full rounded-b-full"}
+						src={Sopa}
 						formats={["avif", "webp"]}
 						alt="A description of my image."
 					/>
@@ -104,8 +100,8 @@ import TriangleImage from "~/components/TriangleImage.astro";
 			<div slot="grid-content-3">
 				<div class="flex flex-col items-center prose text-center">
 					<Picture
-						class:list={"not-prose w-full h-auto"}
-						src={Fish}
+						class:list={"not-prose w-full h-auto rounded-l-full rounded-b-full"}
+						src={Pollo}
 						formats={["avif", "webp"]}
 						alt="A description of my image."
 					/>
@@ -156,8 +152,8 @@ import TriangleImage from "~/components/TriangleImage.astro";
 			</div>
 			<div slot="hero-content-right">
 				<Picture
-					class:list={"mx-auto"}
-					src={PizzaHero}
+					class:list={"mx-auto rounded-l-full rounded-b-full"}
+					src={CachapaConQueso}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
@@ -186,8 +182,8 @@ import TriangleImage from "~/components/TriangleImage.astro";
 			</div>
 			<div slot="hero-content-right">
 				<Picture
-					class:list={"mx-auto"}
-					src={Mussels}
+					class:list={"mx-auto rounded-l-full rounded-b-full"}
+					src={Pollo}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
@@ -197,16 +193,16 @@ import TriangleImage from "~/components/TriangleImage.astro";
 	</Section>
 
 	<!-- Reviews -->
-	<Section class:list={"bg-brand-red/20 relative"}>
+	<Section class:list={"bg-[rgb(56,19,1)] relative"}>
 		<div class="py-16">
 			<Hero>
 				<div slot="hero-content-left" class="prose max-w-none order-2">
 					<div class="text-center not-prose">
 						<Badge color="white" title="reviews" />
 					</div>
-					<h2 slot="heading-title" class="font-black h4 text-center mt-0 mb-4">What our customers say...</h2>
+					<h2 slot="heading-title" class="font-black h4 text-center text-white mt-0 mb-4">What our customers say...</h2>
 					<div slot="heading-content">
-						<p class="text-center">
+						<p class="text-center text-white/80">
 							Don't just take our word for it. Read what our customers have to say about their dining
 							experience at our restaurant.
 						</p>
@@ -271,8 +267,8 @@ import TriangleImage from "~/components/TriangleImage.astro";
 
 			<div slot="hero-content-right">
 				<Picture
-					class:list={"mx-auto"}
-					src={Dessert}
+					class:list={"mx-auto rounded-l-full rounded-b-full"}
+					src={Postre}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
@@ -305,8 +301,8 @@ import TriangleImage from "~/components/TriangleImage.astro";
 
 			<div slot="hero-content-right">
 				<Picture
-					class:list={"mx-auto"}
-					src={Dessert}
+					class:list={"mx-auto rounded-l-full rounded-b-full"}
+					src={Postre}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
