@@ -2,7 +2,7 @@
 export const siteLang = "en-US";
 export const siteCurrency = "USD";
 export const siteDomain = "astropie.com";
-export const siteName = "AstroPie";
+export const siteName = "Tomasa Restaurant";
 export const siteSlogan = "The best pies in the galaxy!";
 export const themeColor = "#FF0000";
 
