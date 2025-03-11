@@ -4,16 +4,16 @@ export const menuMain = [
         url: "/",
         highlighted: false,
     },
-    {
-        name: "Menu",
-        url: "#",
-        highlighted: false,
-    },
-    {
-        name: "Nosotros",
-        url: "#",
-        highlighted: false,
-    },
+    // {
+    //     name: "Menu",
+    //     url: "#",
+    //     highlighted: false,
+    // },
+    // {
+    //     name: "Nosotros",
+    //     url: "#",
+    //     highlighted: false,
+    // },
     {
         name: "Galeria",
         url: "/gallery",
@@ -21,7 +21,7 @@ export const menuMain = [
     },
     {
         name: "Contacto",
-        url: "#",
+        url: "/contact",
         highlighted: false,
     },
     {
